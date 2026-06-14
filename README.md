@@ -13,7 +13,7 @@ Install once, run forever. First use auto-creates your Notion database structure
 | `/kol-add` | Paste any Twitter/X or YouTube link → auto-scrape all data → write to Notion |
 | `/kol-refresh` | Re-scrape existing KOLs, update only data fields (keeps your manual notes safe) |
 | `/kol-eval` | Deep evaluation: pull KOLs from Notion, scrape engagement data, score with CPM/ER/C-L ratio, write verdict back |
-| `/kol-linkedin-import` | Batch import LinkedIn profiles into a Notion database |
+| `/kol-linkedin` | Batch import LinkedIn profiles into a Notion database |
 | `/kol-plan` | Generate a full KOL collaboration plan with funnel math and budget breakdown |
 
 ---
@@ -130,10 +130,10 @@ Requires the [kol-eval Python tool](https://github.com/YoriHan/kol-eval) install
 
 ---
 
-### `/kol-linkedin-import` — Batch LinkedIn import
+### `/kol-linkedin` — Batch LinkedIn import
 
 ```
-/kol-linkedin-import https://www.linkedin.com/in/username1/ https://www.linkedin.com/in/username2/
+/kol-linkedin https://www.linkedin.com/in/username1/ https://www.linkedin.com/in/username2/
 ```
 
 Scrapes follower count and headline from each profile, infers tags (AI / Vibe Coding / No Code / Productivity / Dev) and region (English / Chinese / India), and creates entries in a Notion LinkedIn KOL database.
