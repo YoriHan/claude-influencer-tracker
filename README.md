@@ -1,5 +1,21 @@
 # Claude KOL Skills
 
+## 在 Helio 安装（推荐）
+
+在 Helio 里直接粘贴这个仓库链接，会一次性装上全部 5 个 KOL skill（kol-add / kol-refresh / kol-eval / kol-linkedin / kol-plan）：
+
+```
+https://github.com/YoriHan/influencer-skills
+```
+
+或命令行：
+
+```bash
+heliox skill install YoriHan/influencer-skills --description "KOL 发现 / 追踪 / 评估 / 投放计划"
+```
+
+> Helio 是按 repo 里的 `SKILL.md` 文件来装的（每个 `<名字>/SKILL.md` = 一个 skill）。下面的 `commands/*.md` 是给 Claude Code slash command 用的，两套都可用。
+
 A collection of Claude Code slash commands for KOL (Key Opinion Leader) discovery, tracking, and collaboration planning — built for GTM teams who source influencers on Twitter/X, YouTube, and LinkedIn.
 
 Install once, run forever. First use auto-creates your Notion database structure.
