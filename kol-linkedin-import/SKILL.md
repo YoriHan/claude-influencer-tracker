@@ -1,6 +1,6 @@
 ---
-name: kol-linkedin
-description: "Batch-import LinkedIn KOL profiles into a Notion database: scrape follower count + headline, infer tags (AI/Vibe Coding/No Code/Productivity/Dev) and region, handle mixed X.com DM links. Trigger when: 'kol-linkedin', '导入 LinkedIn KOL', '把这些 LinkedIn 加进 Notion', pasting a batch of LinkedIn profile URLs."
+name: kol-linkedin-import
+description: "Batch-import LinkedIn KOL profiles into a Notion database: scrape follower count + headline, infer tags (AI/Vibe Coding/No Code/Productivity/Dev) and region, handle mixed X.com DM links. Trigger when: 'kol-linkedin-import', '导入 LinkedIn KOL', '批量导入 LinkedIn KOL', '把这些 LinkedIn 加进 Notion', pasting a batch of LinkedIn profile URLs."
 ---
 
 > **Helio 运行说明**：本 skill 由你的自然语言请求触发（不是 Claude Code 的 `/命令`）。下文中出现的 `$ARGUMENTS` 指你在请求里给出的参数——链接 / @handle / 关键词等；没给参数时，按各步骤里的「留空」分支处理。
