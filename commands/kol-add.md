@@ -197,6 +197,17 @@ mkdir -p "$HOME/.claude/kol-tracker"
 
 （无 Twitter KOL 时跳过）
 
+如果用户提供 `tweetclaw-export=<path>` 或明确说明已有 TweetClaw/OpenClaw
+导出的公开 X/Twitter 数据，先生成可审查的种子行：
+
+```bash
+python3 scripts/tweetclaw_to_kol_rows.py "<path>" > /tmp/kol-seed.json
+```
+
+读取 `/tmp/kol-seed.json`，展示 handle、样本推文数、平均浏览和平均点赞。
+只有用户确认后，才把这些种子行写入 Notion。需要补齐 DM 状态、跨平台链接或
+最新曝光时，再继续下面的浏览器抓取流程。
+
 ```bash
 $B goto https://x.com 2>/dev/null && sleep 1
 $B text 2>/dev/null | grep -qE "Sign in|Log in|登录" && echo "NOT_LOGGED_IN" || echo "LOGGED_IN"

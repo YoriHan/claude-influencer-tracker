@@ -104,6 +104,16 @@ That's it. Restart Claude Code and the `/kol-*` commands will be available.
 
 **Twitter cookies:** First Twitter scrape prompts you to export cookies via [Cookie-Editor](https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm) and paste the file path. Saved to config and reused automatically.
 
+**Reviewed TweetClaw exports:** If you already collected public X/Twitter posts
+with TweetClaw in OpenClaw, seed KOL rows before a fresh browser scrape:
+
+```bash
+python3 scripts/tweetclaw_to_kol_rows.py tweetclaw-export.jsonl > kol-seed.json
+```
+
+Use `kol-seed.json` to review handles, recent sample size, average views, and
+average likes before writing or refreshing the Notion records.
+
 ---
 
 ### `/kol-refresh` — Refresh existing data
